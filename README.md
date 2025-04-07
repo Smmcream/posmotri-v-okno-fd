@@ -1,1 +1,1 @@
-https://github.com/Smmcream/posmotri-v-okno-fd#
+https://github.com/Smmcream/posmotri-v-okno-fd
