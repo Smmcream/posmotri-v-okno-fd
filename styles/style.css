@@ -71,6 +71,11 @@ ol {
   overflow: auto; 
   max-width: 399px;
   height: 298px;
+  position: relative;
+}
+
+.preloader {
+  position: absolute;
 }
 
 .content__card-link> *:last-child {
@@ -103,11 +108,6 @@ ol {
   height: 386px;
   }
 
-.preloader {
-  position: absolute;
-  inline-size: 711px;
-  height: 386px;
-}
 
 .result__video {
   width: 100%;
