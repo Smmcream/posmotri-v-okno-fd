@@ -179,15 +179,15 @@ ol {
 .content__card-link {
   color: #FFF;
   text-decoration: none;
-}
-
-.content__card-link:active {
-  background-color: #545050;
+  display: block;
 }
 
 .content__card-link_current {
   background-color: #545050;
-  -webkit-background-color: #545050;
+}
+
+.content__card-link_current:active {
+  background-color: #545050;
 }
 
 .visually-hidden {
