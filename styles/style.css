@@ -60,7 +60,6 @@ ol {
   flex-direction: column;
   padding: 0;
   margin: 0;
-  gap: 30px
 }
 
 .content__list-item {
@@ -70,8 +69,12 @@ ol {
 
 .content__list-container {
   overflow: auto; 
-  width: 100%;
+  max-width: 399px;
   height: 298px;
+}
+
+.content__card-link> *:last-child {
+  margin-bottom: 30px;
 }
 
 .custom-scrollbar::-webkit-scrollbar {
@@ -115,10 +118,6 @@ ol {
   text-transform: uppercase;
   font-weight: 700;
   padding: 0 0 26px;
-}
-
-.content__list-container {
-  max-width: 399px;
 }
 
 .content__video-card {
@@ -165,11 +164,11 @@ ol {
 
 .content__card-link:hover .content__video-card-title {
   text-decoration: underline;
-  text-underline-offset: 4px;
+  text-underline-offset: 2px;
 }
 
 .content__card-link:focus {
-  outline: none;
+  outline: 2px solid white;
 }
 
 .content__accent {
@@ -177,7 +176,7 @@ ol {
 }
 
 .content__card-link {
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
   display: block;
 }
@@ -186,7 +185,7 @@ ol {
   background-color: #545050;
 }
 
-.content__card-link_current:active {
+.content__card-link:active {
   background-color: #545050;
 }
 
@@ -251,10 +250,6 @@ ol {
   font-size: 18px;
 }
 
-.search-form__submit-button {
-  align-self: flex-start; 
-}
-
 .search-form__label {
   display: flex;
   align-items: center;
@@ -267,17 +262,6 @@ ol {
 .search-form__submit-button {
   align-self: flex-end;
   width: 194px;
-  height: 34px;
-  color: #fff;
-  cursor: pointer;
-}
-
-.search-form__submit-button:hover {
-  background-color: #545050;
-}
-
-.search-form__submit-button:active {
-  background-color: #545050;
 }
 
 .search-form__textfield:focus {
@@ -299,6 +283,7 @@ ol {
 
 .search-form__pseudo-checkbox {
   display: block;
+  position: relative;
   border: 1px solid #FFF;
   inline-size: 19px;
   block-size: 19px;
@@ -315,7 +300,6 @@ ol {
 }
 
 .search-form__label:hover .search-form__label-text {
-  text-decoration: underline;
   text-underline-offset: 4px;
 }
 
@@ -326,26 +310,29 @@ ol {
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   content: '';
   display: block;
-  background-color: #FFF;
+  position: absolute;
+  background-color: #fff;
   inline-size: 15px;
   block-size: 15px;
+  opacity: 1;
+  margin: 1px 0 0 1px;
 }
 
 .button {
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 700;
   font-size: 18px;
+  height: 34px;
   border: 1px solid currentColor;
   color: #fff;
   background-color: transparent;
   text-align: center;
   cursor: pointer;
+  background-color: #545050;
 }
 
 .more-button {
   width: 100%;
-  gap: 10px;
-  height: 34px;
 }
 
 .button:active {
